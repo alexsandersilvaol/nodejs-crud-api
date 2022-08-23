@@ -1,0 +1,1 @@
+global.HASH_SEGURO = 'hash-seguro-server';

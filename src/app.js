@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const produtosRoutes = require('./routes/produtos');
+const usuariosRoutes = require('./routes/usuarios');
 
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
@@ -14,5 +15,7 @@ app.use(function (req, res, next) {
 });
 
 app.use('/api/produtos', produtosRoutes);
+app.use('/api/usuarios', usuariosRoutes);
+
 
 module.exports = app;
